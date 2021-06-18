@@ -229,7 +229,6 @@ input::placeholder{
     position:absolute;
     width: 100%;
     left: 0px;
-    border: 1px solid blue;
     min-height:100%;
     background: #f5f5f5 ;
     transition: 00.5s;
