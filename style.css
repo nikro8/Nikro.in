@@ -180,11 +180,10 @@ input::placeholder{
 }
 
 .leftnav{
-  border: 1px solid red;
   position:absolute;
   padding: 10px;
   left: 90%;
-  width:10%kkkkk;
+  width:10%;
   height:100%;
   background:#eef1f100;
   overflow:hidden;
