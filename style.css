@@ -42,6 +42,12 @@ body{
 .navigation ul li:hover{
   background-color: rgb(56, 120, 131);
 }
+
+.navigation ul .logo{
+  background: rgb(255, 254, 254);
+  color: #003147;
+}
+
 .navigation ul linth-:nth-child(1):hover{
   background: transparent;
 }
@@ -55,6 +61,10 @@ body{
   color: white;
 }
 
+.navigation ul .logo a{
+  color: #003147;
+}
+
 .navigation ul li a .icon{
   position: relative;
   display: block;
@@ -64,14 +74,15 @@ body{
   text-align:center;
 }
 
+
 .navigation ul li a .icon .fa{
   color: white;
   font-size: 24px;
 }
-.logo{
-  background: rgba(255, 255, 255, 0.185);
-  color: black;
-}
+
+.navigation ul .logo a .icon .fa{
+  color:#003147;}
+
 .logo .fa{
   color: #003147;
 }
@@ -126,11 +137,16 @@ body{
   text-align: center;
 }
 
+
+
+
+
 .search{
   position: relative;
   width:400px;
   margin:0 10px; 
 }
+
 
 .search label{
   position:relative;
@@ -180,10 +196,11 @@ input::placeholder{
 }
 
 .leftnav{
+  border: 1px solid red;
   position:absolute;
   padding: 10px;
   left: 90%;
-  width:10%;
+  width:10%kkkkk;
   height:100%;
   background:#eef1f100;
   overflow:hidden;
@@ -219,6 +236,8 @@ input::placeholder{
   margin-top: 10px;
   background: rgb(255, 255, 255);
 }
+
+
 
 
 @media screen and (max-width: 500px){
@@ -266,5 +285,46 @@ input::placeholder{
   .content{
     width: 100%;
     border: none;}
+
+
+.search{
+  position: relative;
+  width:30px;
+  left: -20px;
+  margin:0 10px; 
+  transition:700ms;
+}
+.search:hover{
+  width: 400px;
+  left: 0;
 }
 
+
+.nikro{
+  position: relative;
+  min-width: 150px;
+  max-width: 200px;
+  height: 60px;
+  right: -10px;
+  overflow: hidden;
+  transition: 500ms;
+}
+.search:hover ~ .nikro{
+  border: solid rgb(41, 245, 0);
+  display: none;
+  width: 0px;
+  transition: 500ms;
+}
+
+.nikro img{
+  position: absolute;
+  top:5px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+}
