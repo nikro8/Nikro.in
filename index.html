@@ -9,7 +9,7 @@
   <title>Nikro</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type ='text/css' href="style.css">
-  <link rel="stylesheet" href="hrif and what is this and shat is ">
+
 </head>
 <body>
   <div class="container"> 
@@ -64,17 +64,17 @@
     <div class="main">
       <div class="topbar">
         <div class="toggle" onclick="toggleMenu();"></div>
-        <div class="search">
+        <div class="nikro ">
+          <img src="nikro1.png" alt="Nikro">
+        </div>
+        <div class="search" onclick="hide();" onmouseleave="show();">
           <label>
             <input type="text" placeholder='search here'>
             <i class="fa fa-search" aria-hidden="true"></i>
           </label>
         </div>
-        <div class="nikro">
-          <img src="nikro1.png" alt="">
-        </div>
           <div class="user">
-            <img src="user.jpg" alt="">
+            <img src="user.png" alt="">
           </div>
       </div>
 
@@ -94,14 +94,25 @@
       </div>
     </div> 
   </div>
+
   <script>
     function toggleMenu(){
       let toggle = document.querySelector('.toggle');
       let navigation = document.querySelector('.navigation');
       let main = document.querySelector('.main');
+      let nikro = document.querySelector('.nikro');
+      nikro.classList.toggle("active");
       toggle.classList.toggle('active');
       navigation.classList.toggle('active');
       main.classList.toggle('active');
+    }
+    function hide(){
+      let nikro = document.querySelector('.nikro');
+      nikro.classList.add("active");
+    }
+    function show(){
+      let nikro = document.querySelector('.nikro');
+      nikro.classList.remove('active')
     }
   </script>
 </body>
